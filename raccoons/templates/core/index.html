@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+{% include '_navbar.html' %}
+<section class="hero">
+  <div class="hero-body">
+    <div class="container raccoon-hero has-text-centered">
+      <figure class="image is-128x128 raccoon-image">
+        <img src="{% static 'img/raccoon.png' %}" alt="Syn Logo">
+      </figure>
+      <h1 class="title raccoon-title">
+        Raccoons Hacker Club
+      </h1>
+      <h2 class="subtitle">
+        Bienvenido a la comunidad más amigable en la Facultad de Ciencias.
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container  3rem x 3rem  has-text-centered">
+    <span class="icon is-large">
+      <i class="fas fa-hard-hat fa-2x "></i>
+    </span>
+    <h1 class="title">
+      Próximamente...
+    </h1>
+  </div>
+</section>
+{% endblock content %}

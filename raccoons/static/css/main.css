@@ -1,0 +1,25 @@
+html,
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.is-red {
+    background-color: #a20b1b;
+    border-color: transparent;
+    color: white;
+}
+
+.raccoon-title {
+    font-family: 'DM Serif Display', serif;
+}
+
+.raccoon-image {
+    margin: 10px;
+}
+
+.raccoon-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
