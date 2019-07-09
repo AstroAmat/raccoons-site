@@ -6,6 +6,8 @@ python:
 services:
   - docker
 
+before_script: pip install -r requirements/local.txt
+
 script:
   - python manage.py test --settings=config.settings.local
   - flake8
