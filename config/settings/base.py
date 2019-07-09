@@ -164,14 +164,7 @@ INSTALLED_APPS.insert(0, 'admin_interface')
 INSTALLED_APPS.insert(1, 'colorfield')
 
 # Authentication
-# AUTH_USER_MODEL = 'core.User'
+AUTH_USER_MODEL = 'core.User'
 # LOGIN_URL = 'users:login'
 # LOGIN_REDIRECT_URL = 'operations:list'
 # LOGOUT_REDIRECT_URL = 'core:index'
-
-# Email
-EMAIL_HOST = env('DJANGO_EMAIL_HOST')
-EMAIL_USE_TLS = True
-EMAIL_PORT = env('DJANGO_EMAIL_PORT')
-EMAIL_HOST_USER = env('DJANGO_EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = env('DJANGO_EMAIL_HOST_PASSWORD')

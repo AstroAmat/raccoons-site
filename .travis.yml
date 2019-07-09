@@ -4,10 +4,13 @@ python:
   - "3.6"
 
 services:
-  - docker
+  - postgresql
 
-before_script: pip install -r requirements/local.txt
+before_script:
+ - pip install -r requirements/local.txt
+ - psql -c 'create database travis_ci_test;' -U postgres
+ - export DATABASE_URL="postgres://postgres@localhost:5432/travis_ci_test"
 
 script:
-  - python manage.py test --settings=config.settings.local
+  - python manage.py test --settings=config.settings.test
   - flake8

@@ -68,3 +68,10 @@ INSTALLED_APPS += [
 
 # WhiteNoise
 MIDDLEWARE.insert(1, 'whitenoise.middleware.WhiteNoiseMiddleware')
+
+# Email
+EMAIL_HOST = env('DJANGO_EMAIL_HOST')
+EMAIL_USE_TLS = True
+EMAIL_PORT = env('DJANGO_EMAIL_PORT')
+EMAIL_HOST_USER = env('DJANGO_EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('DJANGO_EMAIL_HOST_PASSWORD')
