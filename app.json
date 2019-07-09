@@ -2,7 +2,7 @@
   "name": "Raccoons Hacker Club",
   "description": "Join to the best community in School Of Science, UNAM",
   "image": "heroku/python",
-  "repository": "https://github.com/heroku/python-getting-started",
+  "repository": "https://github.com/raccoon-labs/raccoons-site",
   "keywords": [
     "python",
     "django"
