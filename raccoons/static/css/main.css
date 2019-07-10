@@ -9,6 +9,11 @@ body {
     color: white;
 }
 
+.is-red:hover {
+    color: white;
+    border-color: transparent;
+}
+
 .raccoon-title {
     font-family: 'DM Serif Display', serif;
 }
