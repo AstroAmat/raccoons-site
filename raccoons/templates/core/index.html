@@ -1,206 +1,267 @@
 <!doctype html>
 <html>
-{% load static %}
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>Raccoons Hacker Club</title>
-  <meta name="description" content="Únete a la mejor comunidad estudiantil de computación en México">
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% static 'favicon/apple-touch-icon-57x57.png' %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'favicon/apple-touch-icon-114x114.png' %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'favicon/apple-touch-icon-72x72.png' %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'favicon/apple-touch-icon-144x144.png' %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{% static 'favicon/apple-touch-icon-60x60.png' %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="{% static 'favicon/apple-touch-icon-120x120.png' %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{% static 'favicon/apple-touch-icon-76x76.png' %}" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="{% static 'favicon/apple-touch-icon-152x152.png' %}" />
-  <link rel="icon" type="image/png" href="{% static 'favicon/favicon-196x196.png' %}" sizes="196x196" />
-  <link rel="icon" type="image/png" href="{% static 'favicon/favicon-96x96.png' %}" sizes="96x96" />
-  <link rel="icon" type="image/png" href="{% static 'favicon/favicon-32x32.png' %}" sizes="32x32" />
-  <link rel="icon" type="image/png" href="{% static 'favicon/favicon-16x16.png' %}" sizes="16x16" />
-  <meta name="msapplication-TileColor" content="#a20b1b">
-  <meta name="theme-color" content="#a20b1b">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-  <link rel="stylesheet" href="{% static 'css/landing.min.css' %}">
-  <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Nunito&display=swap" rel="stylesheet" />
-</head>
+  {% load static %}
 
-<body>
-  <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark">
-    <div class="container-fluid"><a class="navbar-brand navbar-brand-centered" href="#"><img
-          src="{% static 'img/raccoon.png' %}" alt="Raccoons Logo"></a>
-      <div></div><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span
-          class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navcol-1">
-        <ul class="nav navbar-nav">
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#">Cursos</a></li>
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#">Inscripciones</a></li>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Raccoons Hacker Club</title>
+    <meta name="description" content="Únete a la mejor comunidad estudiantil de computación en México">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{% static 'favicon/apple-touch-icon-57x57.png' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+      href="{% static 'favicon/apple-touch-icon-114x114.png' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'favicon/apple-touch-icon-72x72.png' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+      href="{% static 'favicon/apple-touch-icon-144x144.png' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="{% static 'favicon/apple-touch-icon-60x60.png' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="120x120"
+      href="{% static 'favicon/apple-touch-icon-120x120.png' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="{% static 'favicon/apple-touch-icon-76x76.png' %}" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"
+      href="{% static 'favicon/apple-touch-icon-152x152.png' %}" />
+    <link rel="icon" type="image/png" href="{% static 'favicon/favicon-196x196.png' %}" sizes="196x196" />
+    <link rel="icon" type="image/png" href="{% static 'favicon/favicon-96x96.png' %}" sizes="96x96" />
+    <link rel="icon" type="image/png" href="{% static 'favicon/favicon-32x32.png' %}" sizes="32x32" />
+    <link rel="icon" type="image/png" href="{% static 'favicon/favicon-16x16.png' %}" sizes="16x16" />
+    <meta name="msapplication-TileColor" content="#a20b1b">
+    <meta name="theme-color" content="#a20b1b">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/91a765634f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'css/landing.min.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Nunito&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark">
+      <div class="container-fluid"><a class="navbar-brand navbar-brand-centered" href="#"><img
+            src="{% static 'img/raccoon.png' %}" alt="Raccoons Logo"></a>
+        <div></div><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span
+            class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navcol-1">
+          <ul class="nav navbar-nav">
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Eventos</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Inscripciones</a></li>
+          </ul>
+          <ul class="nav navbar-nav ml-auto">
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Iniciar Sesión</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Registro</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="bg-light highlight-clean" style="padding-top: 100px;">
+      <div class="container" style="padding-top: 10px;">
+        <div class="intro">
+          <h2 class="text-center raccoons-title" id="raccoons-title">Raccoons Hacker Club</h2>
+          <p class="text-center">¡Bienvenido a la mejor comunidad estudiantil de computólogos en la UNAM!</p>
+        </div>
+        <div class="buttons"><a class="btn btn-primary" role="button" href="#"
+            style="background-color: #a20b1b;">Únete</a><button class="btn btn-light" type="button">Inicia
+            sesión</button></div>
+      </div>
+    </div>
+    <div class="features-clean" id="about">
+      <div class="container">
+        <div class="intro">
+          <h2 class="text-center">¿Quiénes somos?</h2>
+          <p class="text-center">
+            Raccoons nace como una iniciativa para promover el trabajo colaborativo y la difusión
+            libre y gratuita de temas relacionados al software y la tecnología.
+            Nosotros buscamos que la comunidad tenga mejores oportunidades académicas y laborales,
+            compartiendo nuestros conocimientos. No hay mejor forma de aprender que enseñando.
+          </p>
+        </div>
+        <div class="row features">
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fas fa-chalkboard-teacher icon" style="color: #a20b1b;"></i>
+            <h3 class="name">Cursos</h3>
+            <p class="description">
+              Aprende lenguajes de programación, bibliotecas, frameworks, herramientas,
+              software y tecnología que te ayudarán a lograr todo lo que te propongas.
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fas fa-calendar-day icon" style="color: #a20b1b;"></i>
+            <h3 class="name">Talleres y Eventos</h3>
+            <p class="description">
+              En un día crearás algo desde cero con nosotros o escucharás a
+              increíbles <em>speakers</em> que encontramos para ti
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fas fa-pizza icon" style="color: #a20b1b;"></i>
+            <h3 class="name">Meetups</h3>
+            <p class="description">
+              Charlas y talleres de múltiples temas de tecnología, donde podrás hacer networking
+              acompañado de gente increíble y pizza 🍕
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fas fa-edit icon" style="color: #a20b1b;"></i>
+            <h3 class="name">Contenido Gratuito</h3>
+            <p class="description">
+              Siempre estamos creando recursos útiles para ti, desde artículos
+              interesantes en nuestro blog, un newsletter, hasta memes en nuestras
+              redes sociales.
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fas fa-code icon" style="color: #a20b1b;"></i>
+            <h3 class="name">Code Rush</h3>
+            <p class="description">
+              En un día pon a prueba lo que sabes con interesantes y divertidos retos de
+              programación, con el objetivo de aprender a trabajar en equipo mientras
+              te diviertes
+            </p>
+          </div>
+          <div class="col-sm-6 col-lg-4 item">
+            <i class="fas fa-hammer icon" style="color: #a20b1b;"></i>
+            <h3 class="name">Hackathones</h3>
+            <p class="description">
+              Construye una solución para distintas problemáticas en nuestra sociedad
+              en un evento donde programarás durante varias horas ininterrumpidas
+              y gana premios
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light article-list">
+      <div class="container">
+        <div class="intro">
+          <h2 class="text-center">Últimos Eventos</h2>
+          <p class="text-center">Echa un vistazo a qué estamos últimamente</p>
+        </div>
+        <div class="row articles">
+          <div class="col-sm-6 col-md-4 item">
+            <a href="#">
+              <img class="img-fluid" src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80">
+            </a>
+            <h3 class="name">Code Rush: Octubre</h3>
+            <p class="description">
+              Participa en un desafío donde puedes poner a prueba lo que sabes de maneras muy divertidas.
+            </p>
+            <a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: #a20b1b;"></i></a>
+          </div>
+          <div class="col-sm-6 col-md-4 item">
+            <a href="#">
+              <img class="img-fluid"
+                src="https://hacktoberfest.digitalocean.com/assets/HF19_social-744d976f227e4aff6866443abcede8c651b309ec9c7c9f7410f5944f8e1299b9.png" />
+            </a>
+            <h3 class="name">Hacktoberfest</h3>
+            <p class="description">
+              Gana una playera edición limitada haciendo contribuciones al Open Source
+            </p>
+            <a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: #a20b1b;"></i></a>
+          </div>
+          <div class="col-sm-6 col-md-4 item">
+            <a href="#">
+              <img class="img-fluid"
+                src="https://cdn.dribbble.com/users/926537/screenshots/4502924/python-2.gif">
+            </a>
+            <h3 class="name">Curso de Python</h3>
+            <p class="description">
+              Aprende los fundamentales de Python para convertirte en lo que quieras: científico de datos,
+              hacker ético, backend developer... El límite es el cielo
+            </p>
+            <a class="action" href="#"><i class="fa fa-arrow-circle-right" style="color: #a20b1b;"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="team-grid">
+      <div class="container">
+        <div class="intro">
+          <h2 class="text-center">Organizadores</h2>
+          <p class="text-center">Somos estudiantes ordinarios como tú, dispuestos a ayudar en lo que
+            necesites.&nbsp; </p>
+        </div>
+        <div class="row people">
+          <div class="col-md-4 col-lg-3 item">
+            <div class="box"
+              style="background-image:url(https://scontent.fmex5-1.fna.fbcdn.net/v/t1.0-9/16427487_10206243956496641_4632206507042877283_n.jpg?_nc_cat=106&_nc_oc=AQknOOEw2EMdjWYGNsLvo_sNEP9An0eG6mZoDzNqgmCGq2xZLkgcsagTsMg91Bmzxpq_BpLGJodpH7dZsHpAJOfB&_nc_ht=scontent.fmex5-1.fna&oh=da42447d11cbfa2fa84685eb9ab594a0&oe=5E2BE78F">
+              <div class="cover">
+                <h3 class="name">Mauricio Chávez</h3>
+                <p class="title">Community Leader</p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook-official"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 item">
+            <div class="box"
+              style="background-image:url(https://scontent.fmex5-1.fna.fbcdn.net/v/t1.0-9/58380057_1957845207678174_1231647971674685440_n.jpg?_nc_cat=109&_nc_oc=AQm3sq3qISdCnaLa3twAqzsi-r-NoAt0hMh3nZf-SVVVxZ7D28nsQyHEj-ocr0xStjYLHrg80G3z1x1XG5cJT8S6&_nc_ht=scontent.fmex5-1.fna&oh=bf1d36e2b2527e0a468bf16fd3e56116&oe=5E2A6D46)">
+              <div class="cover">
+                <h3 class="name">Juan Antonio Amat</h3>
+                <p class="title">Marketing y Coordinador de Vinculación</p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook-official"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 item">
+            <div class="box"
+              style="background-image:url(https://scontent.fmex5-1.fna.fbcdn.net/v/t1.0-9/51441833_2032547460160331_3375605734992510976_n.jpg?_nc_cat=111&_nc_oc=AQmb1be0s2LqaA69dB_zH3HhRrVo-EmHDTPx7ru8ynil0ej6xqYEgV7ad9J5OMH5jrNxBVy2e3WvljGVJU4LEIUk&_nc_ht=scontent.fmex5-1.fna&oh=b2b2bd22f4d9cb0c0a7ff8662de2650f&oe=5E2C7395)">
+              <div class="cover">
+                <h3 class="name">Emilio Caballero</h3>
+                <p class="title">Coordinador de Difusión</p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook-official"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 item">
+            <div class="box"
+              style="background-image:url(https://scontent.fmex5-1.fna.fbcdn.net/v/t1.0-9/58444352_2183649171701423_527839957281144832_n.jpg?_nc_cat=109&_nc_oc=AQn6aNKS1rD6HTVS28c0feTh_iZrn2yoMOHRGuvzyak6-OPR2vKbYY9n8d60ViHH2-SLmmvtohiHMvH38x_PN2Zb&_nc_ht=scontent.fmex5-1.fna&oh=e45d8d057421da97b73df03330885558&oe=5E265719)">
+              <div class="cover">
+                <h3 class="name">Eric Giovanni</h3>
+                <p class="title">Logística y Desarrollo</p>
+                <div class="social">
+                  <a href="#"><i class="fa fa-facebook-official"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-github"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-white bg-dark footer-basic">
+      <footer>
+        <div class="social">
+          <a href="https://github.com/raccoons-hacker-club/"><i class="icon ion-social-github"></i></a>
+          <a href="https://www.facebook.com/raccoonshackerclub/"><i class="icon ion-social-facebook"></i></a>
+          <!-- <a href="#"><i class="icon ion-social-twitter"></i></a> -->
+          <a href="https://www.instagram.com/raccoonshackerclub/"><i class="icon ion-social-instagram-outline"></i></a>
+        </div>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Eventos</a></li>
+          <li class="list-inline-item"><a href="#">Inscripciones</a></li>
+          <li class="list-inline-item"><a href="#about">¿Quiénes somos?</a></li>
+          <li class="list-inline-item"><a href="{% url 'core:terms' %}">Términos y Condiciones</a></li>
+          <li class="list-inline-item"><a href="{% url 'core:privacy' %}">Aviso de Privacidad</a></li>
         </ul>
-        <ul class="nav navbar-nav ml-auto">
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#">Iniciar Sesión</a></li>
-          <li class="nav-item" role="presentation"><a class="nav-link" href="#">Registro</a></li>
-        </ul>
-      </div>
+        <p class="copyright">Hecho con 💖 por <strong>Raccoons</strong></p>
+      </footer>
     </div>
-  </nav>
-  <div class="bg-light highlight-clean" style="padding-top: 100px;">
-    <div class="container" style="padding-top: 10px;">
-      <div class="intro">
-        <h2 class="text-center raccoons-title" id="raccoons-title">Raccoons Hacker Club</h2>
-        <p class="text-center">¡Bienvenido a la mejor comunidad estudiantil de computólogos en la UNAM!</p>
-      </div>
-      <div class="buttons"><a class="btn btn-primary" role="button" href="#"
-          style="background-color: #a20b1b;">Únete</a><button class="btn btn-light" type="button">Inicia
-          sesión</button></div>
-    </div>
-  </div>
-  <div class="features-clean">
-    <div class="container">
-      <div class="intro">
-        <h2 class="text-center">¿Qué hacemos?</h2>
-        <p class="text-center">El objetivo de esta comunidad es impulsarnos entre todos para tener mejores
-          oportunidades, apoyándonos, compartiendo conocimientos y recibiendo ayuda cuando lo necesitemos. Con
-          el fin de mejorar, organizaremos diversas actividades que
-          nos permitan poner en práctica nuestras habilidades y acercar a personas ajenas a la carrera al
-          mundo de la programación y la tecnología </p>
-      </div>
-      <div class="row features">
-        <div class="col-sm-6 col-lg-4 item"><i class="fa fa-map-marker icon" style="color: #a20b1b;"></i>
-          <h3 class="name">Talleres</h3>
-          <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-            aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-        </div>
-        <div class="col-sm-6 col-lg-4 item"><i class="fa fa-clock-o icon" style="color: #a20b1b;"></i>
-          <h3 class="name">Conferencias</h3>
-          <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-            aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-        </div>
-        <div class="col-sm-6 col-lg-4 item"><i class="fa fa-list-alt icon" style="color: #a20b1b;"></i>
-          <h3 class="name">Cursos</h3>
-          <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-            aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-        </div>
-        <div class="col-sm-6 col-lg-4 item"><i class="fa fa-leaf icon" style="color: #a20b1b;"></i>
-          <h3 class="name">Hackathones</h3>
-          <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-            aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-        </div>
-        <div class="col-sm-6 col-lg-4 item"><i class="fa fa-plane icon" style="color: #a20b1b;"></i>
-          <h3 class="name">Proyectos</h3>
-          <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-            aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-        </div>
-        <div class="col-sm-6 col-lg-4 item"><i class="fa fa-phone icon" style="color: #a20b1b;"></i>
-          <h3 class="name">Reuniones</h3>
-          <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-            aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="bg-light article-list">
-    <div class="container">
-      <div class="intro">
-        <h2 class="text-center">Últimos Eventos Impartidos</h2>
-        <p class="text-center">Conoce qué hemos hecho últimamente</p>
-      </div>
-      <div class="row articles">
-        <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="https://images.unsplash.com/photo-1520110120835-c96534a4c984?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80"></a>
-          <h3 class="name">Article Title</h3>
-          <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-            aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p><a class="action"
-            href="#"><i class="fa fa-arrow-circle-right" style="color: #a20b1b;"></i></a>
-        </div>
-        <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"></a>
-          <h3 class="name">Article Title</h3>
-          <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-            aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p><a class="action"
-            href="#"><i class="fa fa-arrow-circle-right" style="color: #a20b1b;"></i></a>
-        </div>
-        <div class="col-sm-6 col-md-4 item"><a href="#"><img class="img-fluid" src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"></a>
-          <h3 class="name">Article Title</h3>
-          <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent
-            aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p><a class="action"
-            href="#"><i class="fa fa-arrow-circle-right" style="color: #a20b1b;"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="team-grid">
-    <div class="container">
-      <div class="intro">
-        <h2 class="text-center">Fundadores</h2>
-        <p class="text-center">Somos estudiantes ordinarios como tú, dispuestos a ayudar en lo que
-          necesites.&nbsp; </p>
-      </div>
-      <div class="row people">
-        <div class="col-md-4 col-lg-3 item">
-          <div class="box" style="background-image:url(https://www.amtech.net.au/wp-content/uploads/2018/11/xl-2017-woman-programmer-1.jpg">
-            <div class="cover">
-              <h3 class="name">Ben Johnson</h3>
-              <p class="title">Musician</p>
-              <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 item">
-          <div class="box" style="background-image:url(https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80)">
-            <div class="cover">
-              <h3 class="name">Emily Clark</h3>
-              <p class="title">Artist </p>
-              <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 item">
-          <div class="box" style="background-image:url(https://www.amtech.net.au/wp-content/uploads/2018/11/xl-2017-woman-programmer-1.jpg)">
-            <div class="cover">
-              <h3 class="name">Carl Kent</h3>
-              <p class="title">Stylist </p>
-              <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3 item">
-          <div class="box" style="background-image:url(https://images.unsplash.com/photo-1549692520-acc6669e2f0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=633&q=80)">
-            <div class="cover">
-              <h3 class="name">Felicia Adams</h3>
-              <p class="title">Model </p>
-              <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i
-                    class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="text-white bg-dark footer-basic">
-    <footer>
-      <div class="social"><a href="#"><i class="icon ion-social-github"></i></a><a href="#"><i
-            class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a
-          href="#"><i class="icon ion-social-instagram-outline"></i></a></div>
-      <ul class="list-inline">
-        <li class="list-inline-item"><a href="#">Cursos</a></li>
-        <li class="list-inline-item"><a href="#">Inscripciones</a></li>
-        <li class="list-inline-item"><a href="#">Objetivo</a></li>
-        <li class="list-inline-item"><a href="{% url 'core:terms' %}">Términos y Condiciones</a></li>
-        <li class="list-inline-item"><a href="{% url 'core:privacy' %}">Aviso de Privacidad</a></li>
-      </ul>
-      <p class="copyright">Hecho con 💖 por <strong>Raccoons</strong></p>
-    </footer>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-  <script src="{% static 'js/landing.js' %}"></script>
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="{% static 'js/landing.js' %}"></script>
+  </body>
 
 </html>
