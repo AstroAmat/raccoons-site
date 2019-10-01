@@ -44,7 +44,7 @@
             <li class="nav-item" role="presentation"><a class="nav-link" href="#">Inscripciones</a></li>
           </ul>
           <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Iniciar Sesión</a></li>
+            <li class="nav-item" role="presentation"><a class="nav-link" href="{% url 'users:login' %}">Iniciar Sesión</a></li>
             <li class="nav-item" role="presentation"><a class="nav-link" href="#">Registro</a></li>
           </ul>
         </div>
@@ -56,9 +56,14 @@
           <h2 class="text-center raccoons-title" id="raccoons-title">Raccoons Hacker Club</h2>
           <p class="text-center">¡Bienvenido a la mejor comunidad estudiantil de computólogos en la UNAM!</p>
         </div>
-        <div class="buttons"><a class="btn btn-primary" role="button" href="#"
-            style="background-color: #a20b1b;">Únete</a><button class="btn btn-light" type="button">Inicia
-            sesión</button></div>
+        <div class="buttons">
+          <a role="button" class="btn btn-primary" href="#" style="background-color: #a20b1b;">
+            Únete
+          </a>
+          <a role="button" class="btn btn-light" href="{% url 'users:login' %}">
+            Inicia sesión
+          </a>
+        </div>
       </div>
     </div>
     <div class="features-clean" id="about">
@@ -185,9 +190,11 @@
                 <h3 class="name">Mauricio Chávez</h3>
                 <p class="title">Community Leader</p>
                 <div class="social">
-                  <a target="_blank" href="https://www.facebook.com/pensamientobinario"><i class="fab fa-facebook"></i></a>
+                  <a target="_blank" href="https://www.facebook.com/pensamientobinario"><i
+                      class="fab fa-facebook"></i></a>
                   <a target="_blank" href="https://twitter.com/mauriciochavez_"><i class="fab fa-twitter"></i></a>
-                  <a target="_blank" href="https://www.instagram.com/_mauriciochavez"><i class="fab fa-instagram"></i></a>
+                  <a target="_blank" href="https://www.instagram.com/_mauriciochavez"><i
+                      class="fab fa-instagram"></i></a>
                   <a target="_blank" href="https://github.com/mauricio-chavez"><i class="fab fa-github"></i></a>
                 </div>
               </div>
@@ -215,7 +222,8 @@
                 <h3 class="name">Emilio Caballero</h3>
                 <p class="title">Coordinador de Difusión</p>
                 <div class="social">
-                  <a target="_blank" href="https://facebook.com/oscar.caballero.39545"><i class="fab fa-facebook"></i></a>
+                  <a target="_blank" href="https://facebook.com/oscar.caballero.39545"><i
+                      class="fab fa-facebook"></i></a>
                   <a target="_blank" href="https://twitter.com/DexenRoss"><i class="fab fa-twitter"></i></a>
                   <a target="_blank" href="https://instagram.com/wemidr"><i class="fab fa-instagram"></i></a>
                 </div>
