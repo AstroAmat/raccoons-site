@@ -1,12 +1,13 @@
 """Users app URL's config"""
 
+from django.contrib.auth.views import LogoutView
 from django.urls import path
-from django.views.generic import TemplateView
+
+from . import views
+
 
 urlpatterns = [
-    path(
-        route='login',
-        view=TemplateView.as_view(template_name="users/login.html"),
-        name="login"
-    )
+    path('login/', views.LoginView.as_view(), name='login'),
+    path('profile/', views.UserDetailView.as_view(), name='profile'),
+    path('logout/', LogoutView.as_view(), name='logout',)
 ]

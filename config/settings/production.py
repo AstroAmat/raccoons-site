@@ -48,14 +48,14 @@ TEMPLATES[0]['OPTIONS']['loaders'] = [
 # # Email
 DEFAULT_FROM_EMAIL = env(
     'DJANGO_DEFAULT_FROM_EMAIL',
-    default='Raccoons Hacker Club <raccoonslbs@gmail.com>'
+    default='Raccoons <raccoonshackerclub@gmail.com>'
 )
 
 # SERVER_EMAIL = env('DJANGO_SERVER_EMAIL', default=DEFAULT_FROM_EMAIL)
 
 EMAIL_SUBJECT_PREFIX = env(
     'DJANGO_EMAIL_SUBJECT_PREFIX',
-    default='[RHC] '
+    default='[Raccoons] '
 )
 
 # Admin
@@ -75,3 +75,7 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = env('DJANGO_EMAIL_PORT')
 EMAIL_HOST_USER = env('DJANGO_EMAIL_HOST_USER')
 EMAIL_HOST_PASSWORD = env('DJANGO_EMAIL_HOST_PASSWORD')
+
+# Dropbox
+DEFAULT_FILE_STORAGE = 'storages.backends.dropbox.DropBoxStorage'
+DROPBOX_OAUTH2_TOKEN = env('DROPBOX_OAUTH2_TOKEN')

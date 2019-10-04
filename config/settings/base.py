@@ -102,7 +102,7 @@ MIDDLEWARE = [
 
 # Static files
 
-STATIC_ROOT = BASE_DIR / 'www' / 'static'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     APPS_DIR / 'static',
@@ -149,7 +149,7 @@ TEMPLATES = [
 SESSION_COOKIE_HTTPONLY = True
 # CSRF_COOKIE_HTTPONLY = True
 SECURE_BROWSER_XSS_FILTER = True
-X_FRAME_OPTIONS = 'DENY'
+# X_FRAME_OPTIONS = 'DENY'
 
 # Admin
 
@@ -166,6 +166,6 @@ INSTALLED_APPS.insert(1, 'colorfield')
 
 # Authentication
 AUTH_USER_MODEL = 'core.User'
-# LOGIN_URL = 'users:login'
-# LOGIN_REDIRECT_URL = 'operations:list'
-# LOGOUT_REDIRECT_URL = 'core:index'
+LOGIN_URL = 'users:login'
+LOGIN_REDIRECT_URL = 'users:profile'
+LOGOUT_REDIRECT_URL = 'core:index'

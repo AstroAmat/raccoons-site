@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+{% endblock extra_head %}
+
+{% block title %}
+<title>Raccoons | Perfil</title>
+{% endblock title %}
+
+{% block content %}
+{% include '_navbar.html' %}
+<main role="main" class="container">
+  <div class="jumbotron">
+    <h1>{{ request.user.first_name }} {{ request.user.last_name }}</h1>
+    <p class="lead">
+      {% if request.user.is_organizer %}
+      Organizador
+      {% endif %}
+      {% if request.user.is_editor %}
+      / Editor
+      {% endif %}
+      {% if request.user.is_mentor %}
+      / Mentor
+      {% endif %}
+    </p>
+  </div>
+</main>
+{% endblock content %}

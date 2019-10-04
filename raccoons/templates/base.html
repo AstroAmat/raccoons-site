@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="es_MX">
-
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,9 +23,6 @@
     <link rel="icon" type="image/png" href="{% static 'favicon/favicon-16x16.png' %}" sizes="16x16" />
     <meta name="msapplication-TileColor" content="#a20b1b">
     <meta name="theme-color" content="#a20b1b">
-
-
-
     {% block css_framework %}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -42,12 +38,9 @@
     <title>Raccoons</title>
     {% endblock title %}
   </head>
-
   <body>
     {% block content %}{% endblock content %}
   </body>
-
-
   {% block bootstrap_js %}
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
@@ -59,9 +52,6 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   {% endblock bootstrap_js %}
-
   {% block scripts %}
   {% endblock scripts %}
-
-
 </html>
