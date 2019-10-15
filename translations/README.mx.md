@@ -4,27 +4,24 @@
 
 
 
-#### *Read this in [other languages](translations/Translations.md).*
-
-
-[🇲🇽](translations/README.mx.md)
+#### *Read this in [Otros Idiomas](translations/Translations.md).*
 
 #Raccoons Web Site
 
 ![Web Raccoons](/.img/raccoons.png)
 
-If you want to contribute to the page here are these parts.
+Si deseas Contribuir aqui estan las secciones
 
-Section | Description
+Seccion | Enlace
 --------|------------
 Home    | [Home](raccoons/templates/core/index.html)
-Title   | [Title](raccoons/static/js/landing.js)
+Titulo   | [Title](raccoons/static/js/landing.js)
 Blog    | [Blog](raccoons/blog)
 
-#Section
+#secciones
 
 ![Activities](/.img/actividades.png)
 
-#Events
+#Eventos
 
 ![Events](/.img/eventos.png)
