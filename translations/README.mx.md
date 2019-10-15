@@ -6,7 +6,7 @@
 
 #### *Read this in [Otros Idiomas](translations/Translations.md).*
 
-#Raccoons Web Site
+# Raccoons Web Site
 
 ![Web Raccoons](/.img/raccoons.png)
 
@@ -18,10 +18,10 @@ Home    | [Home](raccoons/templates/core/index.html)
 Titulo   | [Title](raccoons/static/js/landing.js)
 Blog    | [Blog](raccoons/blog)
 
-#secciones
+# Secciones
 
 ![Activities](/.img/actividades.png)
 
-#Eventos
+# Eventos
 
 ![Events](/.img/eventos.png)

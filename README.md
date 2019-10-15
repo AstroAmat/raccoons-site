@@ -9,7 +9,7 @@
 
 [🇲🇽](translations/README.mx.md)
 
-#Raccoons Web Site
+# Raccoons Web Site
 
 ![Web Raccoons](/.img/raccoons.png)
 
@@ -21,10 +21,10 @@ Home    | [Home](raccoons/templates/core/index.html)
 Title   | [Title](raccoons/static/js/landing.js)
 Blog    | [Blog](raccoons/blog)
 
-#Section
+# Section
 
 ![Activities](/.img/actividades.png)
 
-#Events
+# Events
 
 ![Events](/.img/eventos.png)
