@@ -11,11 +11,11 @@ class IndexView(TemplateView):
     def get(self, request, *args, **kwargs):
         """Redirects if user is authenticated"""
         if request.user.is_authenticated:
-            return redirect('users:profile')
+            return redirect('accounts:profile')
         return super().get(request, *args, **kwargs)
 
     def post(self, request, *args, **kwargs):
         """Redirects if user is authenticated"""
         if request.user.is_authenticated:
-            return redirect('users:profile')
+            return redirect('accounts:profile')
         return super().post(request, *args, **kwargs)

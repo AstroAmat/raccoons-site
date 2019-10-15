@@ -9,7 +9,7 @@ from django.views.generic import TemplateView
 class LoginView(auth_views.LoginView):
     """Authenticates users"""
     template_name = 'users/login.html'
-    redirect_field_name = reverse_lazy('users:profile')
+    redirect_field_name = reverse_lazy('accounts:profile')
     redirect_authenticated_user = True
 
 

@@ -12,19 +12,34 @@
 {% block content %}
 {% include '_navbar.html' %}
 <main role="main" class="container">
-  <div class="jumbotron">
-    <h1>{{ request.user.first_name }} {{ request.user.last_name }}</h1>
-    <p class="lead">
-      {% if request.user.is_organizer %}
-      Organizador
-      {% endif %}
-      {% if request.user.is_editor %}
-      / Editor
-      {% endif %}
-      {% if request.user.is_mentor %}
-      / Mentor
-      {% endif %}
-    </p>
-  </div>
+  <header class="jumbotron">
+    <div class="row">
+      <div class="col-lg-2 text-center">
+        <img src="{{ request.user.profile.profile_picture.url }}" alt="Avatar" class="rounded-circle z-depth-0"
+          height="150" />
+      </div>
+      <div class="col d-flex flex-column justify-content-center align-items-center">
+        <h1>{{ request.user.first_name }} {{ request.user.last_name }}</h1>
+        <p class="lead">
+          {% if request.user.is_organizer %}
+          Organizador
+          {% endif %}
+          {% if request.user.is_editor %}
+          / Editor
+          {% endif %}
+          {% if request.user.is_mentor %}
+          / Mentor
+          {% endif %}
+        </p>
+        <small class="text-muted">1000 puntos</small>
+      </div>
+    </div>
+  </header>
+  <section class="container text-center">
+    <a role="button" class="btn btn-primary" href="{% url 'blog:create' %}">
+      <i class="fas fa-edit"></i>
+      Nueva Entrada
+    </a>
+  </section>
 </main>
 {% endblock content %}

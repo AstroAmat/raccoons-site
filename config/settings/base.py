@@ -55,7 +55,8 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     'raccoons.core.apps.CoreConfig',
-    'raccoons.users.apps.UsersConfig'
+    'raccoons.users.apps.UsersConfig',
+    'raccoons.blog.apps.BlogConfig',
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
@@ -166,6 +167,6 @@ INSTALLED_APPS.insert(1, 'colorfield')
 
 # Authentication
 AUTH_USER_MODEL = 'core.User'
-LOGIN_URL = 'users:login'
-LOGIN_REDIRECT_URL = 'users:profile'
+LOGIN_URL = 'accounts:login'
+LOGIN_REDIRECT_URL = 'accounts:profile'
 LOGOUT_REDIRECT_URL = 'core:index'
