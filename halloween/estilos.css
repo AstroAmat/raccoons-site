@@ -1,0 +1,33 @@
+body{
+    background-image: url('halloween_raccoons.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    background-size: cover;
+    background-color: rgba(42, 44, 44, 0.9);
+}
+h1{
+    color: white;
+    font-family: URW Chancery L, cursive;
+}
+
+h2{
+    color: white;
+    margin-block-start: 0;
+}
+h3{
+    color: white;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.barra{
+    margin-top: 15% ;
+    background-color: rgba(42, 44, 44, 0.9);
+    width: 100%;
+}
+.titulos{
+    text-align: center;
+    margin: auto;
+}
